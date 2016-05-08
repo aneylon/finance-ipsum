@@ -1,10 +1,18 @@
 * {
-  /*border: solid green 1px;*/
   font-family: "Arial", sans-serif;
 }
 
+html,
 body {
-    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: lightgrey;
+}
+
+#pageWrapper {
+  min-height:100%;
+  position:relative;
 }
 
 .centerEl {
@@ -13,6 +21,14 @@ body {
 
 .width350 {
   width: 350px;
+}
+.width750 {
+  width: 750px;
+}
+.width100p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .blackText {
@@ -41,8 +57,16 @@ body {
   margin-top: 100px;
 }
 
+.marginBottom {
+  margin-bottom: 180px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
 @media screen and (min-width: 480px) {
     body {
-        background-color: lightgreen;
     }
 }

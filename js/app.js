@@ -1,5 +1,7 @@
-// console.log("test");
-var words = [
+// put in commas
+// don't reuse words
+
+var finWords = [
   "diversify",
   "funds",
   "stocks",
@@ -19,16 +21,42 @@ function generateText(){
   if(numParagraphs > 10)
     numParagraphs = 10;
 
-  var newText = "";
-
-  for(var i = 0; i < numParagraphs; i++){
-    newText += i + " paragraph.<br>\n";
-  }
-
-
+  var newText = makeParagraphs(numParagraphs);
   document.getElementById("finText").innerHTML = newText;
 }
 
-// words in sentence
-// sentences in paragraph
-// pagagraphs
+function randNum(min, max){
+  if(max === undefined){
+    var rand = Math.floor(Math.random()*min);
+    return rand < 1 ? 1: rand;
+  }
+    return rand = Math.floor(Math.random()*(max - min) + min);
+}
+
+function makeSentence(words,numWords){
+  var sentenceLength = randNum(3,numWords);
+  var sentence = "";
+  for( var i = 0; i < sentenceLength; i++){
+    sentence += " " + words[randNum(words.length)];
+  }
+  return sentence + ".";
+}
+
+function makeParagraph(numSen){
+  var output = "";
+  var numWords = randNum(numSen);
+  for(var i = 0; i < numSen; i++){
+    output += makeSentence(finWords,15);
+  }
+  return output;
+}
+
+function makeParagraphs(number){
+  var output = "";
+  for(var i = 0; i < number; i ++){
+    output += "<p>\n";
+    output += makeParagraph(randNum(2,8)) + "\n";
+    output += "</p>\n";
+  }
+  return output;
+}
