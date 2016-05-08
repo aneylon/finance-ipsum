@@ -6,4 +6,4 @@ var words = [
   "401k",
   "rollover",
   "IRA"
-]
+];

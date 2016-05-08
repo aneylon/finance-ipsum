@@ -1,3 +1,48 @@
 * {
-  border: solid green 1px;
+  /*border: solid green 1px;*/
+  font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.centerEl {
+  margin: auto;
+}
+
+.width350 {
+  width: 350px;
+}
+
+.blackText {
+  color: black;
+}
+.whiteText {
+  color: white;
+}
+
+.blackBack {
+  background-color: black;
+}
+.whiteBack {
+  background-color: white;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.pad25 {
+  padding: 25px;
+}
+
+.marginTop100 {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
 }
