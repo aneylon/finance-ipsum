@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color: grey;
+  color: lightgrey;
 }
 
 .backWhite {
@@ -40,4 +40,12 @@ a {
   height: 100px;
   color: white;
   background-color: black;
+}
+
+.bgImage {
+  background-image: url("../img/bg3.jpg"); 
+  background-size: 100% 300px; /*cover contain 100% 100%*/
+  /*background-attachment: fixed;*/
+  background-position: top center;
+  background-repeat: no-repeat;
 }

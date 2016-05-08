@@ -1,5 +1,8 @@
 // put in commas
 // don't reuse words
+// capitalize first word
+// initial tab at beginning of paragraph
+// better sentence construction
 
 function generateText(){
   var numParagraphs = document.getElementById("numParagraphs").value;
