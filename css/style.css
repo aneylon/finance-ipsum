@@ -68,6 +68,10 @@ a {
   padding: 15px;
   width: 2.5em;
 }
+.input:hover {
+  border: solid black 1px;
+  background-color: white;
+}
 
 .button {
   border: solid lightgrey 1px;
@@ -80,4 +84,5 @@ a {
 .button:hover {
   background-color: darkgrey;
   color: black;
+  border: solid black 1px;
 }
