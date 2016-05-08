@@ -19,7 +19,7 @@ function generateText(){
     numParagraphs = 1;
   
   if(numParagraphs > 10)
-    numParagraphs = 10;
+    numParagraphs = 20;
 
   var newText = makeParagraphs(numParagraphs);
   document.getElementById("finText").innerHTML = newText;
