@@ -1,4 +1,4 @@
-var words = [
+var finWords = [
   "diversify",
   "funds",
   "stocks",

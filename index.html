@@ -1,46 +1,70 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
   <head>
     <title>Finance Ipsum</title>
     <link href="img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
-    <script scr="js/words.js"></script>
+    <script src="js/words.js"></script>
     <script src="js/app.js"></script>
+    <style>
+      .bgImage {
+        background-image: url("img/bg3.jpg") !important; 
+        background-size: 100% 100%; 
+        background-attachment: fixed;
+      }
+    </style>
   </head>
-  <body>
-    <div id="pageWrapper">
-      <div class="centerEl width350 whiteText blackBack centerText pad25 marginTop100">
-        <h1>Finance Ipsum</h1>
-        <h4>sub title</h4>
-      </div>
-      <div class="pad25 width750 centerEl marginBottom">
-        <div>
-          <p>How many paragraphs?</p>
-          <p>
-            <input type="text" size="1" placeholder="#" id="numParagraphs">
-          </p>
-          <p>
-            <input type="button" value="Generate Text" onClick="generateText()">
-          </p>
-        </div>
-        <div id="finText" class="blackText whiteBack pad25">
-          <p>
-            Need some filler text for your fintech web app mockup?
-          </p>
-          <p>
-            Pick a number of paragraphs and hit the generate button.
-          </p>
+  <body class="bgImage">
+    <div class="container">
+      <div class="header">
+        <div class="jumbotron text-center">
+          <h1>Finance Ipsum</h1>
+          <h4>Generate filler text for your fintech web app mockup.</h4>
         </div>
       </div>
-      <div id="footer" class="blackBack whiteText width100p bottom">
-        <p class="centerText">this is the footer</p>
+      <div class="row backWhite">
+        <div class="col-md-8">
+          <div>
+            <p>How many paragraphs?</p>
+            <p>
+              <input type="text" size="1" placeholder="#" id="numParagraphs">
+            </p>
+            <p>
+              <input type="button" value="Generate Text" onClick="generateText()">
+            </p>
+          </div>
+          <div id="finText" class="blackText whiteBack pad25">
+            <p>
+              Need some filler text for your fintech web app mockup?
+            </p>
+            <p>
+              Pick a number of paragraphs and hit the generate button.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="row">
+            <p>find this useful</p>
+            <p>tip your coder</p>
+          </div>
+          <div class="row">
+            <p>add goes here</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer text-center">
       <div class="container">
-        <p>bootstrap footer</p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>copy right <a href="http://www.arlen-neylon.com">arlen neylon</a></p>
+          </div>
+          <div class="col-md-6">
+            <p>check out the code on <a href="http://github.com/aneylon/finance-ipsum">github</a></p>
+          </div>
+        </div>
       </div>
     </footer>
 

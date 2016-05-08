@@ -1,16 +1,6 @@
 // put in commas
 // don't reuse words
 
-var finWords = [
-  "diversify",
-  "funds",
-  "stocks",
-  "bonds",
-  "401k",
-  "rollover",
-  "IRA"
-];
-
 function generateText(){
   var numParagraphs = document.getElementById("numParagraphs").value;
   numParagraphs = Number(numParagraphs);
