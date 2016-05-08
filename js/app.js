@@ -1,8 +1,16 @@
+// make bg image
+
+// input validation
+  // 
+
 // put in commas
 // don't reuse words
 // capitalize first word
 // initial tab at beginning of paragraph
 // better sentence construction
+
+// google adsense ?
+// url = ~ $15.00
 
 function generateText(){
   var numParagraphs = document.getElementById("numParagraphs").value;
@@ -12,10 +20,11 @@ function generateText(){
     numParagraphs = 1;
   
   if(numParagraphs > 10)
-    numParagraphs = 20;
+    numParagraphs = 10
 
   var newText = makeParagraphs(numParagraphs);
   document.getElementById("finText").innerHTML = newText;
+  document.getElementById("numParagraphs").value = "";
 }
 
 function randNum(min, max){

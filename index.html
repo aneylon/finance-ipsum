@@ -11,7 +11,9 @@
 
     </style>
   </head>
-  <body class="bgImage">
+  <body>
+    <div class="bgHeader">
+    </div>
     <div class="container">
       <div class="header">
         <div class="jumbotron text-center">
@@ -19,33 +21,26 @@
           <h4>Generate filler text for your fintech web app mockup.</h4>
         </div>
       </div>
-      <div class="row backWhite">
+      <div class="row">
         <div class="col-md-8">
           <div>
-            <p>How many paragraphs?</p>
+            <h2>How many paragraphs?</h2>
             <p>
-              <input type="text" size="1" placeholder="#" id="numParagraphs">
-            </p>
-            <p>
-              <input type="button" value="Generate Text" onClick="generateText()">
+              <input type="text" size="1" placeholder="01" id="numParagraphs" maxlength="2" class="input">
+              <input type="button" value="Generate Text" onClick="generateText()" class="button">
             </p>
           </div>
-          <div id="finText" class="blackText whiteBack pad25">
-            <p>
-              Need some filler text for your fintech web app mockup?
-            </p>
-            <p>
-              Pick a number of paragraphs and hit the generate button.
-            </p>
+          <div id="finText">
+            <!-- default text here -->
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="row">
-            <p>find this useful</p>
-            <p>tip your coder</p>
+            <h3>find this useful?</h3>
+            <h4><a href="http://arlen-neylon.com">tip your coder</a></h4>
           </div>
           <div class="row">
-            <p>add goes here</p>
+            <p>ads will go here</p>
           </div>
         </div>
       </div>
@@ -55,7 +50,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <p>copy right <a href="http://www.arlen-neylon.com">arlen neylon</a></p>
+            <p>copy right <a href="http://www.arlen-neylon.com">arlen neylon</a> 2016</p>
           </div>
           <div class="col-md-6">
             <p>check out the code on <a href="http://github.com/aneylon/finance-ipsum">github</a></p>

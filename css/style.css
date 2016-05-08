@@ -42,10 +42,42 @@ a {
   background-color: black;
 }
 
-.bgImage {
-  background-image: url("../img/bg3.jpg"); 
-  background-size: 100% 300px; /*cover contain 100% 100%*/
-  /*background-attachment: fixed;*/
+.bgHeader {
+  background-image: url("../img/bg3.jpg");
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 300px;
+  width: 100%;
+}
+
+#finText {
+  padding: 25px;
+  font-size: 125%;
+}
+
+.input {
+  background-color: lightgrey;
+  border: solid darkgrey 1px;
+  border-radius: 5px;
+  font-size: 200%;
+  padding: 15px;
+  width: 2.5em;
+}
+
+.button {
+  border: solid lightgrey 1px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 200%;
+  padding: 15px;
+}
+.button:hover {
+  background-color: darkgrey;
+  color: black;
 }
