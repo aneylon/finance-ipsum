@@ -5,7 +5,6 @@
 
 // put in commas
 // don't reuse words
-// capitalize first word
 // initial tab at beginning of paragraph
 // better sentence construction
 
@@ -39,7 +38,20 @@ function makeSentence(words,numWords){
   var sentenceLength = randNum(3,numWords);
   var sentence = "";
   for( var i = 0; i < sentenceLength; i++){
-    sentence += " " + words[randNum(words.length)];
+    if(i === 0) { // capitalize first word of sentence
+      var word = words[randNum(words.length)];
+      var tmp = "";
+      for(var k = 0; k < word.length; k++){
+        if(k === 0) {
+          tmp += word[k].toUpperCase();
+        } else {
+          tmp += word[k];         
+        }
+      }
+      sentence += " " + tmp;
+    } else {
+      sentence += " " + words[randNum(words.length)];
+    }
   }
   return sentence + ".";
 }
