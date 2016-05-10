@@ -11,6 +11,12 @@
 // google adsense ?
 // url = ~ $15.00
 
+function keyDown(event){
+  if( event.which === 13 ) {
+    generateText();
+  }
+}
+
 function generateText(){
   var numParagraphs = document.getElementById("numParagraphs").value;
   numParagraphs = Number(numParagraphs);
