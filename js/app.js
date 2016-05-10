@@ -1,10 +1,10 @@
 // make bg image
+// submit with 'enter' in text field.
 
 // input validation
-  // 
+  // do not allow non number characters in text field
 
-// put in commas
-// don't reuse words
+// put in commas for longer sentences
 // initial tab at beginning of paragraph
 // better sentence construction
 
@@ -36,10 +36,12 @@ function randNum(min, max){
 
 function makeSentence(words,numWords){
   var sentenceLength = randNum(3,numWords);
+  var tempWords = words.slice();
   var sentence = "";
   for( var i = 0; i < sentenceLength; i++){
-    if(i === 0) { // capitalize first word of sentence
-      var word = words[randNum(words.length)];
+    var rand = randNum(tempWords.length);
+    if(i === 0) {
+      var word = tempWords[rand];
       var tmp = "";
       for(var k = 0; k < word.length; k++){
         if(k === 0) {
@@ -50,8 +52,9 @@ function makeSentence(words,numWords){
       }
       sentence += " " + tmp;
     } else {
-      sentence += " " + words[randNum(words.length)];
+      sentence += " " + tempWords[rand];
     }
+    tempWords.splice(rand,1);
   }
   return sentence + ".";
 }
