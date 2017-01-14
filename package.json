@@ -1,0 +1,12 @@
+{
+  "name": "finance-ipsum",
+  "description": "generate filler text for your fin tech mockups",
+  "main": "./server",
+  "repository": "https://github.com/aneylon/finance-ipsum",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
