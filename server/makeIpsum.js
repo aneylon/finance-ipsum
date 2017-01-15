@@ -43,6 +43,13 @@ function makeParagraph(numSen){
 }
 
 function makeParagraphs(number){
+
+  if(isNaN(number) || number === 0)
+    number = 1
+
+  if(number > 10)
+    number = 10
+
   var output = "";
   for(var i = 0; i < number; i ++){
     output += "<p>\n";
