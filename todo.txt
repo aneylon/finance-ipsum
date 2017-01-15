@@ -1,0 +1,7 @@
+CORS
+Make BG image
+
+sentences
+  commas for longer sentences
+  initial tab?
+  better sentence construction
