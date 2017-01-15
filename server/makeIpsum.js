@@ -44,7 +44,7 @@ function makeParagraph(numSen){
 
 function makeParagraphs(number){
 
-  if(isNaN(number) || number === 0)
+  if(isNaN(number) || number === 0 || number === '')
     number = 1
 
   if(number > 10)
