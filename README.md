@@ -1,7 +1,7 @@
 # finance-ipsum
 Generate filler text for your fin-tech web app mockup.
 ---
-Visit the live website [Finance Ipsum](http://www.arlen-neylon.com/finance-ipsum)
+Visit the live website [Finance Ipsum](https://finance-ipsum.herokuapp.com/finance-ipsum)
 
 There is also an API endpoint you can use to get up to 10 paragraphs of finance ipsum.
 

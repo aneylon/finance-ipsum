@@ -16,7 +16,6 @@ app.use(express.static('public'))
 
 app.get('/ipsum/:num', (req, res) => {
   num = Number(req.params.num)
-  console.log(makeIpsum(num))
   res.send(makeIpsum(num))
 })
 
